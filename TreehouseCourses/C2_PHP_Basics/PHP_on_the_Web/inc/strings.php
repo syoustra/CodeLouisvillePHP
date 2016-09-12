@@ -1,14 +1,29 @@
 <?php
-$name = 'Alena';
+$name = 'Stephanie';
 $string_one = "Learning to display \"Hello $name!\" to the screen.\n";
+//echo $string_one;
+
+$string_one = 'Learning to display "Hello ' . $name . '!" to the screen.' . "\n";
+//echo $string_one;
+
+$string_one = 'Learning to display '
+	.'"Hello '
+	. $name
+	. '!" to the screen.'
+	. "\n";
+//echo $string_one;
+
 $string_one = 'Learning to display ';
 $string_one .= '"Hello ';
 $string_one .= $name;
 $string_one .= '!" to the screen.';
-//$string_one = $string_one . "\n";
-//prepend to a string
-//$string_one = 'I am ' . $string_one;
+//$string_one .= "\n";
+	//prepend to a string
+	//$string_one = 'I am ' . $string_one;
 //echo $string_one;
+
+
+
 
 $isReady = true;
 //var_dump($isReady);
@@ -23,13 +38,16 @@ $b = '10';
 //var_dump($a == $b);
 //var_dump($a === $b);
 
-//($string_one == 'Learning to display "Hello Alena!" to the screen.');
+//($string_one == 'Learning to display "Hello Stephanie!" to the screen.');
 $string_one = "";
-if ($string_one == 'Learning to display "Hello Alena!" to the screen.') {
- echo 'the values match';  
+if ($string_one == 'Learning to display "Hello Stephanie!" to the screen.') {
+	echo 'The values match.';
 } elseif ($string_one == "") {
-    echo '$string_one is empty';
+	echo '$string_one is empty.';
 } else {
- echo 'the values DO NOT match';   
+	echo 'The values do NOT match.';
 }
+
+
+
 ?>
