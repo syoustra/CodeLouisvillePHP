@@ -20,7 +20,7 @@ $string_one .= '!" to the screen.';
 //$string_one .= "\n";
 	//prepend to a string
 	//$string_one = 'I am ' . $string_one;
-echo $string_one;
+//echo $string_one;
 
 
 
@@ -38,6 +38,16 @@ $b = '10';
 //var_dump($a == $b);
 //var_dump($a === $b);
 
-var_dump($string_one == 'Learning to display "Hello Stephanie!" to the screen.')
+//($string_one == 'Learning to display "Hello Stephanie!" to the screen.');
+$string_one = "";
+if ($string_one == 'Learning to display "Hello Stephanie!" to the screen.') {
+	echo 'The values match.';
+} elseif ($string_one == "") {
+	echo '$string_one is empty.';
+} else {
+	echo 'The values do NOT match.';
+}
+
+
 
 ?>
