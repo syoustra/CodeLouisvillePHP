@@ -19,7 +19,8 @@ if ($a !== $b) {
 	echo 'Values are NOT identical.';
 }*/
 
-if ($a) {
+
+/*if ($a) {
 	echo 'true';
 }
 if (!$a) {
@@ -30,8 +31,7 @@ if ($a == false) {
 }
 if ($a != true) {
 	echo 'false';
-}
-
+}*/
 
 
 /*if ($a == $b) {
@@ -44,6 +44,7 @@ if ($a != true) {
 	echo 'values are NOT equal';
 }*/
 
+
 /*$score = 15;
 if ($score >= 60) {
 	echo 'You completed the level!';
@@ -52,6 +53,44 @@ if ($score >= 60) {
 } else {
 	echo 'Please try again.';
 }*/
+
+
+$num = '20';
+
+/*if ($num == 10 || is_string($num)) {
+	echo '10 or string';
+} else {
+	echo 'NOT 10 or string';
+}*/
+
+
+/*if ($num >= 10 && $num <= 1000) {
+		echo 'Your number is within the range.';
+} else {
+		echo 'Your number is NOT within the range.';
+}*/
+
+
+/*if ($num >= 10) {
+	if ($num <= 1000) {
+		echo 'Your number is within the range.';
+	} else {
+		echo 'Your number is greater than 1000, NOT within the range.'
+	}
+} else {
+	echo 'Your number is less than 10, NOT within the range.';
+}*/
+
+
+$var1 = true && false;
+$var2 = true and false;
+
+var_dump($var1, $var2);
+
+
+
+
+
 
 
 ?>
