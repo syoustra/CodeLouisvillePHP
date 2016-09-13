@@ -49,6 +49,7 @@ if (!$firstName || !$lastName) {
 				break;
 			default:
 				$messageBody = 'Error: Grade level is not 9-12.';
+				break;
 			}
 		}
 
