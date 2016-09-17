@@ -7,10 +7,15 @@ $iceCream = array(
 	);
 $iceCream['alena'] = 'Pistachio';
 $iceCream['Dave Thomas'] = 'Cookies and Cream';
-$iceCream[] = 'Vanilla';
+// $iceCream[] = 'Vanilla';
 $iceCream['Andrew'] = true;
+
+ksort($iceCream);
+asort($iceCream);
+
 var_dump($iceCream);
 // echo $iceCream['Alena'];
+
 
 $keys = array(
 	1 => 'a',

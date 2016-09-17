@@ -13,5 +13,4 @@ $list[] = [
 ];
 var_dump($list);
 echo $list[0]['title'];
-
 ?>
