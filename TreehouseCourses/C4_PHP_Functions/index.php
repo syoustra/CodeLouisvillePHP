@@ -1,20 +1,49 @@
 <?php
 
-function hello() {
-	echo 'Hello, World!';
-}
+function get_info($name, $title = null) {
 
-$current_user = 'Hampton';
-
-function is_mike() {
-	global $current_user;
-	if($current_user == 'Mike') {
-		echo 'It is Mike!';
+	if($title) {
+		echo "$name has arrived, they are with us as a $title";
 	} else {
-		echo 'Nope, it is not Mike.';
+		echo "$name has arrived, welcome!";
 	}
+
 }
 
-is_mike();
+get_info('Mike','frog');
+
+
+// function hello($arr) {
+// 	if(is_array($arr)) {
+// 		foreach($arr as $name) {
+// 			echo "Hello, $name, how's it going?</br>";
+// 		}
+// 	} else {
+// 		echo 'Hello, friends!';
+// 	}
+// }
+
+
+// $names = array(
+// 	'Hampton',
+// 	'Mike',
+// 	'Charley'
+// );
+// hello($names);
+
+
+
+// $current_user = 'Hampton';
+
+// function is_mike() {
+// 	global $current_user;
+// 	if($current_user == 'Mike') {
+// 		echo 'It is Mike!';
+// 	} else {
+// 		echo 'Nope, it is not Mike.';
+// 	}
+// }
+
+// is_mike();
 
 ?>
