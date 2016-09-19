@@ -1,32 +1,16 @@
 <?php
 
-function add_up($a, $b) {
-	$arr = array(
-		$a,
-		$b,
-		$a + $b
-	);
-	return $arr;
+function answer() {
+	return 42;
 }
 
-$value = add_up(2,4);
+function add_up($a, $b) {
+	return $a + $b;
+}
 
-print_r ($value);
-echo $value[2];
+$func = 'add_up';
 
-
-// function hello($name) {
-// 	if($name == 'Mike') {
-// 		return 'Hello, Mike!';
-// 	} else {
-// 		return 'Hello, stranger.';
-// 	}
-
-// }
-
-// $greeting = hello('Chris');
-
-// echo $greeting;
-
+$num = $func(5, 10);
+echo $num;
 
 ?>
