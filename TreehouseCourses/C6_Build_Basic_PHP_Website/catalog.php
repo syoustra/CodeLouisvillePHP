@@ -1,5 +1,7 @@
 <?php 
 
+include("inc/data.php");
+
 	$pageTitle = "Full Catalog"; // default for when not otherwise specified
 	$section = null; // default for when not otherwise specified
 
@@ -25,15 +27,18 @@
 
 		<h1><?php echo $pageTitle; ?></h1>
 
-		<ul>
-<!-- 			<li>Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li> -->
+		<ul class="items">
 			<?php 
 			foreach($catalog as $item) {
-				echo "<li>" . $item . "</li>";
+				echo "<li><a href='#'><img src='"
+				. $item["img"] . "' alt='"
+				. $item["title"] . "' />"
+				. "<p>View Details</p>"
+				. "</a></li>";
+
 			}
 			?>
+
 		</ul>
 
 
