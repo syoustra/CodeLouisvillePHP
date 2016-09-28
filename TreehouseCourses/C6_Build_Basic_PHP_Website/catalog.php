@@ -1,7 +1,5 @@
 <?php 
 
-
-
 	$pageTitle = "Full Catalog"; // default for when not otherwise specified
 	$section = null; // default for when not otherwise specified
 
