@@ -8,18 +8,20 @@ class Recipe
 	public $yield;
 	public $tag = array();
 	public $source = "Alena Holligan";
+
+	public function displayRecipe()
+	{
+		return $this->title . " by " . $this->source;
+	}
 }
 
 $recipe1 = new Recipe();
-echo $recipe1->source;
 $recipe1->source = "Grandma Holligan";
-echo $recipe1->source;
+$recipe1->title = "My First Recipe";
 
 $recipe2 = new Recipe();
 $recipe2->source = "Betty Crocker";
-echo $recipe1->source;
-echo $recipe2->source;
+$recipe2->title = "My Second Recipe";
 
-
-//var_dump($recipe1);
-
+echo $recipe1->displayRecipe();
+echo $recipe2->displayRecipe();
