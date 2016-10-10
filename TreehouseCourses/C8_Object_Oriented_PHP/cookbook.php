@@ -6,3 +6,4 @@ include "inc/recipes.php";
 
 
 echo Render::displayRecipe($belgian_waffles);
+
